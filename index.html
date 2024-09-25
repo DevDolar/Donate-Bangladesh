@@ -57,10 +57,11 @@
     </header>
 
     <!-- Main Area -->
-    <main class="container mx-auto gap-10 flex flex-col">
-      <div id="donation-form">
+    <main class="container mx-auto">
+      <div id="donation-form" class="gap-10 flex flex-col">
         <!-- Noakhali Foold Area Start -->
-        <div class="grid grid-cols-2 border rounded-2xl bg-base-100 p-5">
+        <div
+          class="grid grid-cols-2 gap-5 border rounded-2xl bg-base-100 p-5 shadow-lg">
           <figure>
             <img class="w-full" src="assets/noakhali.png" alt="noakhali" />
           </figure>
@@ -94,10 +95,7 @@
                   required />
               </div>
               <div class="form-control mt-6">
-                <button
-                  onclick="modal.showModal()"
-                  id="btn-noakhali"
-                  class="btn bg-[#B4F461]">
+                <button id="btn-noakhali" class="btn bg-[#B4F461]">
                   Donate Now
                 </button>
               </div>
@@ -107,7 +105,8 @@
         <!-- Noakhali Foold Area End -->
 
         <!-- Feni Flood Area Start -->
-        <div class="grid grid-cols-2 border rounded-2xl bg-base-100 p-5">
+        <div
+          class="grid grid-cols-2 border gap-5 rounded-2xl bg-base-100 p-5 shadow-lg">
           <figure>
             <img class="w-full" src="assets/feni.png" alt="Feni" />
           </figure>
@@ -117,7 +116,9 @@
               <p id="donate-balance-feni" class="font-bold text-lg">600</p>
               <p class="text-lg">BDT</p>
             </div>
-            <h2 class="card-title">Donate for Flood at Feni, Bangladesh</h2>
+            <h2 id="feniTitle" class="card-title">
+              Donate for Flood at Feni, Bangladesh
+            </h2>
             <p>
               The recent floods in Feni have devastated local communities,
               leading to severe disruption and loss. Your generous donation will
@@ -150,9 +151,13 @@
         </div>
         <!-- Feni Flood Area End -->
         <!-- Quota Movement Area Start -->
-        <div class="grid grid-cols-2 border rounded-2xl bg-base-100 p-5">
+        <div
+          class="grid grid-cols-2 border gap-5 rounded-2xl bg-base-100 p-5 shadow-lg">
           <figure>
-            <img class="w-full" src="assets/feni.png" alt="Quota Movement" />
+            <img
+              class="w-full"
+              src="assets/quota-protest.png"
+              alt="Quota Movement" />
           </figure>
           <div class="flex flex-col gap-5 p-5">
             <div class="btn flex-initial w-1/4 gap-2">
@@ -160,7 +165,9 @@
               <p id="donate-balance-quota" class="font-bold text-lg">2400</p>
               <p class="text-lg">BDT</p>
             </div>
-            <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+            <h2 id="quotaTitle" class="card-title">
+              Aid for Injured in the Quota Movement
+            </h2>
             <p>
               The recent Quota movement has resulted in numerous injuries and
               significant hardship for many individuals. Your support is crucial

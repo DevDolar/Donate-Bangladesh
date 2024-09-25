@@ -5,9 +5,23 @@ function inputAmount(id) {
   return inputType;
 }
 
-// Update Donate Status
-function statusAmount(id) {
+// Update Donate Status Noakhali
+function statusAmountNoakhali(id) {
   const status = document.getElementById("donate-balance-noakhali").innerText;
+  const statusType = parseFloat(status);
+  return statusType;
+}
+
+// Update Donate Status Feni
+function statusAmountFeni(id) {
+  const status = document.getElementById("donate-balance-feni").innerText;
+  const statusType = parseFloat(status);
+  return statusType;
+}
+
+// Update Donate Status Quota
+function statusAmountQuota(id) {
+  const status = document.getElementById("donate-balance-quota").innerText;
   const statusType = parseFloat(status);
   return statusType;
 }
