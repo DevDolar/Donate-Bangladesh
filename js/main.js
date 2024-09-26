@@ -11,7 +11,7 @@ document
     const initialAmount = mainAmount("initial-amount");
 
     // Validate Initial Amount
-    if (initialAmount <= 0) {
+    if (initialAmount < noakhaliAmount) {
       alert("You do not have sufficient balance.");
       return;
     }
@@ -75,7 +75,7 @@ document.getElementById("btn-feni").addEventListener("click", function (event) {
   const initialAmount = mainAmount("initial-amount");
 
   // Validate Initial Amount
-  if (initialAmount <= 0) {
+  if (initialAmount < feniAmount) {
     alert("You do not have sufficient balance.");
     return;
   }
@@ -139,7 +139,7 @@ document
     const initialAmount = mainAmount("initial-amount");
 
     // Validate Initial Amount
-    if (initialAmount <= 0) {
+    if (initialAmount < quotaAmount) {
       alert("You do not have sufficient balance.");
       return;
     }
