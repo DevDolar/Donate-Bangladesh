@@ -40,11 +40,9 @@ document
     h2.classList.add("text-xl", "font-bold");
     h2.innerText = `${noakhaliAmount} Taka is ${noakhaliTitleName}`;
 
-    // Date Added
     const dateTime = document.createElement("p");
     dateTime.innerText = `Date: ${Date()}`;
 
-    // Create a new div for each transaction entry
     const transactionEntry = document.createElement("div");
     transactionEntry.classList.add(
       "transaction-entry",
@@ -57,11 +55,9 @@ document
       "mt-5"
     );
 
-    // Append Title and dateTime to the new transaction entry
     transactionEntry.appendChild(h2);
     transactionEntry.appendChild(dateTime);
 
-    // Added Transaction Status
     document.getElementById("transaction").appendChild(transactionEntry);
 
     // Clear Value
@@ -106,11 +102,9 @@ document.getElementById("btn-feni").addEventListener("click", function (event) {
   h2.classList.add("text-xl", "font-bold");
   h2.innerText = `${feniAmount} Taka is ${feniTitleName}`;
 
-  // Date Added
   const dateTime = document.createElement("p");
   dateTime.innerText = `Date: ${Date()}`;
 
-  // Create a new div for each transaction entry
   const transactionEntry = document.createElement("div");
   transactionEntry.classList.add(
     "transaction-entry",
@@ -123,11 +117,9 @@ document.getElementById("btn-feni").addEventListener("click", function (event) {
     "mt-5"
   );
 
-  // Append Title and dateTime to the new transaction entry
   transactionEntry.appendChild(h2);
   transactionEntry.appendChild(dateTime);
 
-  // Added Transaction Status
   document.getElementById("transaction").appendChild(transactionEntry);
 
   // Clear Value
@@ -175,11 +167,9 @@ document
     h2.classList.add("text-xl", "font-bold");
     h2.innerText = `${quotaAmount} Taka is ${quotaTitleName}`;
 
-    // Date Added
     const dateTime = document.createElement("p");
     dateTime.innerText = `Date: ${Date()}`;
 
-    // Create a new div for each transaction entry
     const transactionEntry = document.createElement("div");
     transactionEntry.classList.add(
       "transaction-entry",
@@ -192,13 +182,14 @@ document
       "mt-5"
     );
 
-    // Append Title and dateTime to the new transaction entry
     transactionEntry.appendChild(h2);
     transactionEntry.appendChild(dateTime);
 
-    // Added Transaction Status
     document.getElementById("transaction").appendChild(transactionEntry);
 
     // Clear Value
     document.getElementById("donate-amount-quota").value = "";
   });
+
+// Header Scroll background shadow
+// document.getElementById("bg-transparent").style.backgroundColor = "black";
